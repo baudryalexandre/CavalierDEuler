@@ -375,3 +375,83 @@ footer p {
     z-index: 2;
     margin: 0;
 }
+
+@media screen and (max-width: 767px) {
+    h1, h4 {
+        font-size: 2.5em;
+        position: static;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #rules {
+        width: 95%;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #board {
+        width: auto;
+        grid-template-columns: repeat(8, 40px);
+        grid-template-rows: repeat(8, 40px);
+    }
+
+    .cell {
+        font-size: 1.2em;
+        padding: 2px;
+    }
+
+    .knight {
+        font-size: 2em;
+    }
+
+    #player-name-end,
+    #player-name {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    #start-button,
+    #reset,
+    button {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    #scoreboard {
+        width: 95%;
+        font-size: 1em;
+        margin: 10px auto;
+    }
+
+    #score-list li {
+        font-size: 1em;
+    }
+
+    #name-container,
+    #mode-container {
+        width: 95%;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    body {
+        padding: 10px;
+        justify-content: flex-start;
+        background-size: cover;
+    }
+
+    #game, #all, #test {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+}
